@@ -2,72 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>An Automaton Clerk for the Counting-House — The Electric Gazette</title>
+  <title>An Automaton Clerk — The Electric Gazette</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { background:#fdfaf5; font-family:"Garamond","Georgia",serif; color:#2c1f14; line-height:1.6; margin:0; }
-    .container { max-width:1000px; margin:2rem auto; padding:2rem; border:8px double #7a5a41; background:#fffdf8; }
-    header { text-align:center; margin-bottom:1.5rem; }
-    .masthead { font-size:2rem; font-variant:small-caps; font-weight:700; color:#4b3a2a; letter-spacing:0.04em; }
-    .subtitle { font-style:italic; color:#7a5a41; }
-    .ornate-rule { margin:1rem 0; border:0; height:10px; background:radial-gradient(circle,#b08b5b 1px,transparent 2px) center/8px 8px repeat-x; }
-    figure { margin:1rem auto; text-align:center; }
-    figure img { max-width:100%; border:1px solid #7a5a41; box-shadow:0 0 0 6px #fffdf8, 0 0 0 8px #7a5a41; }
-    figcaption { font-style:italic; margin-top:0.5rem; color:#3a2a20; }
-    .columns { column-count:2; column-gap:2rem; }
-    .columns p { margin-bottom:1rem; text-align:justify; }
-    .columns .lede::first-letter { float:left; font-size:3rem; line-height:0.9; margin-right:0.3rem; color:#b08b5b; font-weight:700; }
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #666;
-      font-size: 0.95rem;
-    }
-    .footer-rule {
-      margin: 1rem auto 0.5rem;
-      width: 200px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--ornament), transparent);
-    }
-    @media (max-width: 640px) {
-      .masthead { font-size: 1.7rem; }
-      article h1 { font-size: 1.5rem; }
-    }
-  </style>
+  <!-- Link to the universal stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
+  <main class="frame">
     <header>
       <div class="masthead">The Electric Gazette</div>
-      <div class="subtitle">An Automaton Clerk for the Counting-House</div>
+      <div class="subtitle">Aetherworks Edition — Mechanical Marvels</div>
+      <div class="divider" aria-hidden="true"></div>
     </header>
 
-    <hr class="ornate-rule" />
+    <article aria-label="Feature story: Automaton Clerk">
+      <h1>An Automaton Clerk for the Counting-House</h1>
+      <p class="byline">Dispatch from our Industrial Correspondent • London</p>
 
-    <figure>
-      <img src="automaton.png" alt="Engraving of the Arithmetical Clerk-Engine with numbered drums and pump-handle" />
-      <figcaption>The Arithmetical Clerk-Engine computes with fearful clangour, terrifying junior staff.</figcaption>
-    </figure>
+      <p class="lede">
+        In the bustling offices of the City, where ledgers groan beneath the weight of commerce,
+        there has appeared a mechanical clerk whose brass wheels and pump handle promise to relieve
+        the weary bookkeeper of his endless arithmetic.
+      </p>
 
-    <div class="columns">
-      <p><strong>Machine Promises to Total Ledgers & Terrify Junior Staff</strong></p>
-      <p><em>City of London, Monday</em></p>
+      <hr class="ornate-rule" />
 
-      <p class="lede">Messrs. Peabody & Kincaid, Accountants of Bishopsgate, have installed in their offices an apparatus known as the Arithmetical Clerk-Engine, constructed under the supervision of Dr. Leverson. The machine, consisting of a nest of brass wheels, numbered drums, and a lever much resembling a pump-handle, is said to compute sums of fearful magnitude without once resorting to the back of an envelope.</p>
+      <p>
+        The device, styled as a Clerk-Engine, is furnished with a series of cogwheels, pistons, and
+        a polished crank. When set in motion, it performs addition and subtraction with a fidelity
+        that astonishes even the most skeptical of accountants. Figures are entered upon a dial,
+        and the result appears upon a rotating drum, neatly inscribed by a stylus of hardened steel.
+      </p>
 
-      <p>A junior clerk, upon being invited to enter a column of figures, was observed to grow paler with each clang of the mechanism. “If it can reckon the interest,” he murmured, “what further use have they for me?”</p>
+      <p>
+        Witnesses report that the machine, once engaged, ticks with a rhythm not unlike the beating
+        of a sober heart, and its outputs are so precise that even the auditors of the Crown have
+        expressed admiration. The Clerk-Engine is said to reduce the labors of a day to the span of
+        an hour, and to do so without complaint, fatigue, or the temptation of a public house.
+      </p>
 
-      <p>Investors need not fear; the inventors assure us that the engine has no capacity to go to lunch, and therefore can never replace human labour entirely.</p>
-    </div>
- <footer>
-      <div class="footer-rule" aria-hidden="true"></div>
-      <p>© 1887 The Electric Gazette • Demonstrations • Assays • Household Curiosities</p>
+      <div class="callout" role="note" aria-label="On the Clerk-Engine">
+        <h2>On the Clerk-Engine</h2>
+        <p>
+          The inventor, Mr. Hargreaves, assures us that the device may be adapted to calculate
+          interest, tally inventories, and even prepare invoices. Thus the counting-house may soon
+          be staffed not by clerks of flesh and blood, but by clerks of brass and steam.
+        </p>
+      </div>
+
+      <figure>
+        <img src="images/automaton.png" alt="Illustration of the Automaton Clerk-Engine" />
+        <figcaption>
+          The Clerk-Engine, with its brass wheels and pump handle, performing calculations with
+          gentlemanly exactitude.
+        </figcaption>
+      </figure>
+
+      <p>
+        Whether this marvel shall replace the human clerk entirely remains to be seen. Yet it is
+        certain that the Automaton Clerk marks a new chapter in the annals of industry, where
+        machinery not only spins and hammers, but also thinks—or at least calculates—with a
+        precision that rivals the human mind.
+      </p>
+    </article>
+
+    <footer>
+      <div class="footer-rule"></div>
+      <p>The Electric Gazette • Industrial Dispatches • Mechanical Marvels • Counting-House Innovations</p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
-
-
-
-
-
