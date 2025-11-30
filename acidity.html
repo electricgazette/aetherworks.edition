@@ -4,116 +4,8 @@
   <meta charset="UTF-8" />
   <title>A New Test for Acidity & Alkalinity — The Electric Gazette</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root {
-      --ink: #1b1b1b;
-      --sepia: #4b3a2a;
-      --paper: #faf7f2;
-      --ornament: #7a5a41;
-      --accent: #b08b5b;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: "Garamond", "Georgia", serif;
-      line-height: 1.6;
-    }
-    .frame {
-      max-width: 1000px;
-      margin: 2.5rem auto;
-      padding: 2rem;
-      background: #fffdf8;
-      box-shadow: 0 1px 0 var(--ornament), 0 0 0 6px #fffdf8, 0 0 0 8px var(--ornament);
-    }
-    header {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    .masthead {
-      font-size: 2rem;
-      font-variant: small-caps;
-      font-weight: bold;
-      color: var(--sepia);
-      letter-spacing: 0.05em;
-    }
-    .subtitle {
-      font-style: italic;
-      color: var(--ornament);
-      margin-top: 0.5rem;
-    }
-    .divider {
-      margin: 0.75rem auto 1.5rem;
-      width: 180px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--accent), transparent);
-    }
-    article h1 {
-      font-size: 1.75rem;
-      color: var(--sepia);
-      margin-bottom: 0.5rem;
-    }
-    .byline {
-      font-style: italic;
-      color: #3a3a3a;
-      margin-bottom: 1rem;
-    }
-    .ornate-rule {
-      margin: 1.25rem 0;
-      border: 0;
-      height: 10px;
-      background: radial-gradient(circle, var(--accent) 1px, transparent 2px) center/8px 8px repeat-x;
-    }
-    figure {
-      margin: 1.25rem 0 1.5rem;
-      text-align: center;
-    }
-    figure img {
-      max-width: 100%;
-      border: 1px solid var(--ornament);
-      box-shadow: 0 2px 0 var(--ornament), 0 0 0 8px #fffdf8, 0 0 0 9px var(--ornament);
-    }
-    figcaption {
-      margin-top: 0.5rem;
-      font-style: italic;
-      color: #4a4a4a;
-    }
-    .columns {
-      column-count: 2;
-      column-gap: 2rem;
-    }
-    .columns p {
-      margin-bottom: 1rem;
-      text-align: justify;
-      break-inside: avoid;
-    }
-    .columns .lede::first-letter {
-      float: left;
-      font-size: 3.5rem;
-      line-height: 0.95;
-      padding: 0.15rem 0.35rem 0.2rem 0;
-      margin-right: 0.25rem;
-      color: var(--accent);
-      font-weight: 700;
-      text-shadow: 0 1px 0 #fff;
-    }
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #666;
-      font-size: 0.95rem;
-    }
-    .footer-rule {
-      margin: 1rem auto 0.5rem;
-      width: 200px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--ornament), transparent);
-    }
-    @media (max-width: 640px) {
-      .columns { column-count: 1; }
-    }
-  </style>
+  <!-- Link to the universal stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <main class="frame">
@@ -130,7 +22,7 @@
       <hr class="ornate-rule" />
 
       <figure>
-        <img src="chemical.png" alt="" />
+        <img src="images/acidity_demo.png" alt="Illustration of acidity and alkalinity test" />
         <figcaption></figcaption>
       </figure>
 
@@ -150,11 +42,9 @@
     </article>
 
     <footer>
-      <div class="footer-rule" aria-hidden="true"></div>
-      <p>© 1887 The Electric Gazette • Demonstrations • Assays • Household Curiosities</p>
+      <div class="footer-rule"></div>
+      <p>© 1885 The Electric Gazette • Demonstrations • Assays • Household Curiosities</p>
     </footer>
   </main>
 </body>
 </html>
-
-
