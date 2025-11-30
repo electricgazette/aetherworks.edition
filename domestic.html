@@ -4,75 +4,43 @@
   <meta charset="UTF-8" />
   <title>Experiments with the Domestic Aethernet — The Electric Gazette</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { background:#fdfaf5; font-family:"Garamond","Georgia",serif; color:#2c1f14; line-height:1.6; margin:0; }
-    .container { max-width:1000px; margin:2rem auto; padding:2rem; border:8px double #7a5a41; background:#fffdf8; }
-    header { text-align:center; margin-bottom:1.5rem; }
-    .masthead { font-size:2rem; font-variant:small-caps; font-weight:700; color:#4b3a2a; letter-spacing:0.04em; }
-    .subtitle { font-style:italic; color:#7a5a41; }
-    .ornate-rule { margin:1rem 0; border:0; height:10px; background:radial-gradient(circle,#b08b5b 1px,transparent 2px) center/8px 8px repeat-x; }
-    figure { margin:1rem auto; text-align:center; }
-    figure img { max-width:100%; border:1px solid #7a5a41; box-shadow:0 0 0 6px #fffdf8, 0 0 0 8px #7a5a41; }
-    figcaption { font-style:italic; margin-top:0.5rem; color:#3a2a20; }
-    .columns { column-count:2; column-gap:2rem; }
-    .columns p { margin-bottom:1rem; text-align:justify; }
-    .columns .lede::first-letter { float:left; font-size:3rem; line-height:0.9; margin-right:0.3rem; color:#b08b5b; font-weight:700; }
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #666;
-      font-size: 0.95rem;
-    }
-    .footer-rule {
-      margin: 1rem auto 0.5rem;
-      width: 200px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--ornament), transparent);
-    }
-    @media (max-width: 640px) {
-      .masthead { font-size: 1.7rem; }
-      article h1 { font-size: 1.5rem; }
-    }
-  </style>
+  <!-- Link to the universal stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
+  <main class="frame">
     <header>
       <div class="masthead">The Electric Gazette</div>
-      <div class="subtitle">Experiments with the Domestic Aethernet</div>
+      <div class="subtitle">Aetherworks Edition — Household Dispatch</div>
+      <div class="divider" aria-hidden="true"></div>
     </header>
 
-    <hr class="ornate-rule" />
+    <article>
+      <h1>Experiments with the Domestic Aethernet</h1>
+      <p class="byline">Dispatch from our Household Correspondent</p>
 
-    <figure>
-      <img src="illustration_domestic.jpg" alt="Engraving of parlour cathode window with cat drawing transmitted" />
-      <figcaption>Miss Bracknell’s parlour wall receives admonitory illustrations — a feline thief in green sparks.</figcaption>
-    </figure>
- <article>
-    <div class="columns">
-      <p><strong>Parlour in Bloomsbury Receives Moving Picture of a Cat</strong></p>
-      <p><em>Bloomsbury, London</em></p>
+      <hr class="ornate-rule" />
 
-      <p class="lede">While the grand demonstrations of the Aethernet have occupied the attention of learned societies, certain private householders have been quietly adapting the system for less solemn purposes.</p>
+      <figure>
+        <img src="images/domestic.png" alt="Illustration of parlour cathode window with cat stealing pudding" />
+        <figcaption>The parlour cathode window, interrupted by a mischievous cat stealing pudding.</figcaption>
+      </figure>
 
-      <p>In a modest house off Russell Square, Miss Euphemia Bracknell has fitted to her sitting-room wall a small rectangular Aethernet screen, politely described as a “domestic cathode window.” Attached by wire to her brother’s workshop in the basement, it allows the transmission of simple images traced upon a special slate.</p>
+      <div class="columns">
+        <p class="lede">In a quiet parlour, a domestic cathode window has been employed for curious experiments...</p>
 
-      <p>On Tuesday last, Mr. Bracknell, seeking to test the apparatus, drew the likeness of a cat engaged in the theft of a Christmas pudding. Within a fraction of a minute the same feline delinquent appeared, in pale green sparks, upon his sister’s parlour wall.</p>
+        <p>The contrivance, consisting of a thin cathode ray tube affixed to a household window frame, was intended to demonstrate the transmission of images and messages through the aether. Neighbours gathered to witness the marvel, remarking upon the faint electric script that appeared upon the pane.</p>
 
-      <p>“It is most improving,” Miss Bracknell assured our reporter, “for I can now receive admonitory illustrations from my brother without the bother of his person.”</p>
+        <p>Yet the demonstration was interrupted by a mischievous cat, who, finding opportunity, stole a pudding from the sideboard and carried it off in triumph. The incident, though vexing to the housekeeper, provided amusement to the assembled company and proved that even the most advanced apparatus is not immune to domestic hazards.</p>
 
-      <p>The Society notes with interest that, if such domestic Aethernet windows were connected to the wider network proposed by Mr. Wexley, a lady in Bath might one day receive, without delay, both the latest Paris fashions and the disapproving expression of her Aunt in Edinburgh.</p>
-    </div>
+        <p>It is suggested that future experiments be conducted in rooms less frequented by felines, or that the apparatus be fortified against culinary theft. The principle, however, remains sound, and the Domestic Aethernet promises to bring both communication and comedy into the Victorian household.</p>
+      </div>
+    </article>
+
     <footer>
-      <div class="footer-rule" aria-hidden="true"></div>
-      <p>© 1887 The Electric Gazette • Demonstrations • Assays • Household Curiosities</p>
+      <div class="footer-rule"></div>
+      <p>© 1885 The Electric Gazette • Household Dispatches • Domestic Curiosities • Aethernet Experiments</p>
     </footer>
- </article>
-  </div>
-   </body>
+  </main>
+</body>
 </html>
-
-
-
-
-
