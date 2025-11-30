@@ -4,70 +4,37 @@
   <meta charset="UTF-8" />
   <title>Marvellous Detection in Cape Town — The Electric Gazette</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { background:#fdfaf5; font-family:"Garamond","Georgia",serif; color:#2c1f14; line-height:1.6; margin:0; }
-    .container { max-width:1000px; margin:2rem auto; padding:2rem; border:8px double #7a5a41; background:#fffdf8; }
-    header { text-align:center; margin-bottom:1.5rem; }
-    .masthead { font-size:2rem; font-variant:small-caps; font-weight:700; color:#4b3a2a; letter-spacing:0.04em; }
-    .subtitle { font-style:italic; color:#7a5a41; }
-    .ornate-rule { margin:1rem 0; border:0; height:10px; background:radial-gradient(circle,#b08b5b 1px,transparent 2px) center/8px 8px repeat-x; }
-    figure { margin:1rem auto; text-align:center; }
-    figure img { max-width:100%; border:1px solid #7a5a41; box-shadow:0 0 0 6px #fffdf8, 0 0 0 8px #7a5a41; }
-    figcaption { font-style:italic; margin-top:0.5rem; color:#3a2a20; }
-    .columns { column-count:2; column-gap:2rem; }
-    .columns p { margin-bottom:1rem; text-align:justify; }
-    .columns .lede::first-letter { float:left; font-size:3rem; line-height:0.9; margin-right:0.3rem; color:#b08b5b; font-weight:700; }
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #666;
-      font-size: 0.95rem;
-    }
-    .footer-rule {
-      margin: 1rem auto 0.5rem;
-      width: 200px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--ornament), transparent);
-    }
-    @media (max-width: 640px) {
-      .masthead { font-size: 1.7rem; }
-      article h1 { font-size: 1.5rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
+  <main class="frame">
     <header>
       <div class="masthead">The Electric Gazette</div>
-      <div class="subtitle">Marvellous Detection in Cape Town</div>
+      <div class="subtitle">Aetherworks Edition — Colonial Dispatch</div>
+      <div class="divider"></div>
     </header>
 
-    <hr class="ornate-rule" />
+    <article>
+      <h1>Marvellous Detection in Cape Town</h1>
+      <p class="byline">Inspector Harrington’s Photographic Plate</p>
 
-    <figure>
-      <img src="illustration_capetown.jpg" alt="Engraving of Inspector Harrington and photographic plate shadow" />
-      <figcaption>A photographic shadow and a whiskered silhouette bring the thief to justice.</figcaption>
-    </figure>
+      <hr class="ornate-rule" />
 
-    <div class="columns">
-      <p><strong>Stolen Diamonds Recovered by Means of a Photographic Shadow</strong></p>
-      <p><em>Cape Town, Cape Colony</em></p>
+      <figure>
+        <img src="images/capetown.png" alt="Illustration of Inspector examining photographic plate" />
+        <figcaption>Inspector Harrington examining a photographic plate shadow to catch a thief.</figcaption>
+      </figure>
 
-      <p class="lede">A daring robbery of unset diamonds from the counting-house of Messrs. Van Der Merwe & Sons has been brought to a satisfactory conclusion by the ingenuity of Inspector Harrington of the Colonial Police.</p>
+      <div class="columns">
+        <p class="lede">In Cape Town, a thief was apprehended by means of a photographic plate shadow...</p>
+        <!-- Continue full article text here -->
+      </div>
+    </article>
 
-      <p>It appears that a camera had been left upon its tripod near the safe, prepared for the idle amusement of the clerks. While the apparatus was not intentionally discharged during the crime, the lens, having been exposed to strong sunlight, produced a faint image upon the plate nonetheless. When developed, the photograph yielded little more than a blur and a curious elongated shadow.</p>
-
-      <p>Dr. Reuleaux, who happened to be travelling through the Colony in search of “sun-perforated hieroglyphs,” was consulted. By comparing the distorted shadow with the silhouettes of every clerk when back-lit by a gas jet, he identified one Mr. Abel Sykes as the only man whose hat, nose, and regrettable whiskers could cast so singular a profile. Confronted with this scientific evidence, Sykes confessed at once.</p>
-
-      <p>It is expected that cameras will now be admitted as credible witnesses in certain colonies, though wigs and gowns are not yet contemplated for them.</p>
-    </div>
-   <footer>
-      <div class="footer-rule" aria-hidden="true"></div>
-      <p>© 1887 The Electric Gazette • Demonstrations • Assays • Household Curiosities</p>
+    <footer>
+      <div class="footer-rule"></div>
+      <p>© 1885 The Electric Gazette • Colonial Dispatches • Photographic Detection • Criminal Curiosities</p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
-
-
-
