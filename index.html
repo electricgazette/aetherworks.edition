@@ -15,7 +15,7 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 3rem auto;
       padding: 2rem;
       border: 8px double #7a5a41;
@@ -42,28 +42,6 @@
       margin-top: 0.5rem;
     }
 
-    nav {
-      margin: 2rem 0;
-      text-align: center;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 0.5rem 1rem;
-      padding: 0.5rem 1rem;
-      background: #eae2d9;
-      border: 1px solid #b08b5b;
-      color: #2c1f14;
-      text-decoration: none;
-      font-variant: small-caps;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    nav a:hover {
-      background: #d6c6b5;
-    }
-
     section {
       margin-top: 2rem;
     }
@@ -73,10 +51,42 @@
       color: #4b3a2a;
       font-variant: small-caps;
       margin-bottom: 1rem;
+      border-bottom: 1px dashed #b08b5b;
+      padding-bottom: 0.25rem;
     }
 
-    p {
+    .headline {
+      font-size: 1.1rem;
+      font-variant: small-caps;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .headline a {
+      text-decoration: none;
+      color: #2c1f14;
+      border-bottom: 1px dotted #7a5a41;
+    }
+
+    .headline a:hover {
+      color: #7a5a41;
+    }
+
+    .ad-section, .society-section {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 2px dashed #b08b5b;
+    }
+
+    .ad {
+      font-size: 0.95rem;
       margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .society-notice {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     footer {
@@ -101,12 +111,47 @@
       <div class="subtitle">London’s Premier Source for the News of the Day</div>
     </header>
 
-    <nav>
-      <a href="aetherworks.html">Aetherworks Edition</a>
-      <a href="#">Dispatches</a>
-      <a href="#">Inventions</a>
-      <a href="#">Discoveries</a>
-      <a href="#">Detections</a>
-    </nav>
+    <section>
+      <h2>Science & Engineering</h2>
+      <div class="headline"><a href="aetherworks.html">A Starry Firmament, Arrested by Mechanick Art</a></div>
+      <div class="headline"><a href="aethernet.html">The Aethernet Triumphant</a></div>
+      <div class="headline"><a href="automaton.html">An Automaton Clerk for the Counting-House</a></div>
+      <div class="headline"><a href="cloudship.html">Britannia Rules the Skies?</a></div>
+      <div class="headline"><a href="steamelephant.html">The Steam Elephant of Calcutta</a></div>
+    </section>
 
     <section>
+      <h2>Detection & Mystery</h2>
+      <div class="headline"><a href="cambridge.html">Cambridge Christmas Scandal</a></div>
+      <div class="headline"><a href="capetown.html">Marvellous Detection in Cape Town</a></div>
+      <div class="headline"><a href="pulse.html">A Mysterious Pulse Upon the Atlantic Cable</a></div>
+      <div class="headline"><a href="clock.html">The Clock That Testifies</a></div>
+    </section>
+
+    <section>
+      <h2>Domestic Curiosities</h2>
+      <div class="headline"><a href="acidity.html">A New Test for Acidity & Alkalinity</a></div>
+      <div class="headline"><a href="domestic.html">Experiments with the Domestic Aethernet</a></div>
+    </section>
+
+    <div class="ad-section">
+      <h2>Advertisements & Notices</h2>
+      <div class="ad">☞ <strong>For Sale:</strong> One brass-bound encoding machine, lightly used, suitable for cryptographic courtship. Apply discreetly.</div>
+      <div class="ad">☞ <strong>Wanted:</strong> A sober gentleman to assist with nocturnal observations. Must not fear owls or equations.</div>
+      <div class="ad">☞ <strong>Lost:</strong> One monocle, last seen during a heated debate on the nature of time. Reward offered.</div>
+    </div>
+
+    <div class="society-section">
+      <h2>Society Notices</h2>
+      <div class="society-notice">⚜️ Lady Thistlewaite will host her annual Aethermas Ball at the Conservatory. Gentlemen are reminded to polish their goggles.</div>
+      <div class="society-notice">⚜️ The Society for the Preservation of Proper Christmas requests volunteers for the Candle Inventory and Mince Pie Audit.</div>
+      <div class="society-notice">⚜️ Mr. P. Wiggins of Pimlico has successfully decoded the Mayor’s New Year’s Toast. The message reads: “More Port.”</div>
+    </div>
+
+    <footer>
+      <div class="footer-rule" aria-hidden="true"></div>
+      <p>© 1885 The Electric Gazette • Dispatches from Every Quarter of the Globe</p>
+    </footer>
+  </div>
+</body>
+</html>
