@@ -13,7 +13,7 @@ html, body {
   color: var(--ink);
   font-family: "Garamond", "Georgia", serif;
   line-height: 1.6;
-}
+
 
 /* Ornate frame */
 .frame {
@@ -61,6 +61,34 @@ article h1 {
   color: #3a3a3a;
   margin-bottom: 1rem;
 }
+    .headline {
+      font-size: 1.1rem;
+      font-variant: small-caps;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .headline a {
+      text-decoration: none;
+      color: #2c1f14;
+      border-bottom: 1px dotted #7a5a41;
+    }
+    .headline a:hover {
+      color: #7a5a41;
+    }
+.ad-section, .society-section {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 2px dashed #b08b5b;
+    }
+    .ad {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    .society-notice {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
 
 /* Decorative rules */
 .ornate-rule {
