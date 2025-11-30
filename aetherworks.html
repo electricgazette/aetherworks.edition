@@ -17,6 +17,22 @@
     .columns { column-count:2; column-gap:2rem; }
     .columns p { margin-bottom:1rem; text-align:justify; }
     .columns .lede::first-letter { float:left; font-size:3rem; line-height:0.9; margin-right:0.3rem; color:#b08b5b; font-weight:700; }
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .footer-rule {
+      margin: 1rem auto 0.5rem;
+      width: 200px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--ornament), transparent);
+    }
+    @media (max-width: 640px) {
+      .masthead { font-size: 1.7rem; }
+      article h1 { font-size: 1.5rem; }
+    }
   </style>
 </head>
 <body>
@@ -54,11 +70,13 @@
 
       <p>Should this Aetherworks achieve commercial success, we are credibly informed that The Electric Gazette will be amongst the first to furnish its subscribers with an “Evening Edition by Aether.” Those who prefer the rustle of paper to the hum of coils may rest assured that no respectable breakfast table shall be abandoned without a struggle.</p>
     </div>
-  </div>
+
    <footer>
       <div class="footer-rule" aria-hidden="true"></div>
       <p>© 1887 The Electric Gazette • Demonstrations • Assays • Household Curiosities</p>
     </footer>
+  </div>
 </body>
 </html>
+
 
