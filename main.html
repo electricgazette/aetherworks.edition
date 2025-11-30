@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Electric Gazette — Aetherworks Edition</title>
+  <style>
+    :root {
+      --ink: #1b1b1b;
+      --sepia: #4b3a2a;
+      --paper: #faf7f2;
+      --ornament: #7a5a41;
+      --accent: #b08b5b;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Garamond", "Georgia", serif;
+      line-height: 1.6;
+    }
+    .frame {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background: #fffdf8;
+      position: relative;
+      box-shadow: 0 1px 0 var(--ornament), 0 0 0 6px #fffdf8, 0 0 0 8px var(--ornament);
+    }
+    .frame::before,
+    .frame::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background:
+        radial-gradient(circle at 20% 20%, transparent 18px, var(--ornament) 19px, var(--ornament) 21px, transparent 22px) top left,
+        radial-gradient(circle at 80% 20%, transparent 18px, var(--ornament) 19px, var(--ornament) 21px, transparent 22px) top right,
+        radial-gradient(circle at 20% 80%, transparent 18px, var(--ornament) 19px, var(--ornament) 21px, transparent 22px) bottom left,
+        radial-gradient(circle at 80% 80%, transparent 18px, var(--ornament) 19px, var(--ornament) 21px, transparent 22px) bottom right;
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      opacity: 0.9;
+      top: -6px; left: -6px; right: -6px; bottom: -6px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .masthead {
+      letter-spacing: 0.06em;
+      font-variant: small-caps;
+      font-weight: 700;
+      color: var(--sepia);
+      font-size: 2.25rem;
+    }
+    .subtitle {
+      margin-top: 0.35rem;
+      color: var(--ornament);
+      font-style: italic;
+    }
+    .divider {
+      margin: 0.75rem auto 1.5rem;
+      width: 180px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent), transparent);
+    }
+    .edition-band {
+      text-align: center;
+      font-variant: small-caps;
+      color: var(--ink);
+      letter-spacing: 0.04em;
+      margin-bottom: 2rem;
+    }
+    .teaser {
+      border: 1px solid var(--accent);
+      padding: 1rem;
+      background: #fffaf2;
+      margin: 1.25rem 0 1.5rem;
+    }
+    .teaser h2 {
+      font-size: 1.15rem;
+      margin: 0 0 0.5rem;
+      color: var(--sepia);
+      font-variant: small-caps;
+      letter-spacing: 0.04em;
+    }
+    .ornate-rule {
+      margin: 1.25rem 0;
+      border: 0;
+      height: 10px;
+      background: radial-gradient(circle, var(--accent) 1px, transparent 2px) center/8px 8px repeat-x;
+    }
+    .link-button {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid var(--ornament);
+      color: var(--sepia);
+      text-decoration: none;
+      background: #f8f6f2;
+      font-variant: small-caps;
+    }
+    .link-button:hover {
+      background: #efe9de;
+    }
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .footer-rule {
+      margin: 1rem auto 0.5rem;
+      width: 200px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--ornament), transparent);
+    }
+    @media (max-width: 640px) {
+      .masthead { font-size: 1.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="frame" role="main">
+    <header>
+      <div class="masthead">The Electric Gazette</div>
+      <div class="subtitle">London’s Premier Source for the News of the Day</div>
+      <div class="divider" aria-hidden="true"></div>
+      <div class="edition-band">Aetherworks Edition</div>
+    </header>
+
+    <section class="teaser" aria-label="Featured article teaser">
+      <h2>Featured Dispatch</h2>
+      <p><strong>A Starry Firmament, Arrested by Mechanick Art</strong> — The Vigenere Demonstration, wherein the midnight heavens are wooed onto the plate with gentlemanly exactitude.</p>
+      <a class="link-button" href="starryfirmament.html">Read the full article</a>
+    </section>
+
+    <hr class="ornate-rule" />
+
+    <footer>
+      <div class="footer-rule" aria-hidden="true"></div>
+      <p>The Electric Gazette • Dispatches from Every Quarter of the Globe • Inventions • Discoveries • Detections</p>
+    </footer>
+  </main>
+</body>
+</html>
