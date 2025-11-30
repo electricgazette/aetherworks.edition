@@ -3,41 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <title>Cambridge Christmas Scandal — The Electric Gazette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body {
-      background: #fdfaf5;
-      font-family: "Garamond", "Georgia", serif;
-      color: #2c1f14;
-      line-height: 1.6;
+    :root {
+      --ink: #1b1b1b;
+      --sepia: #4b3a2a;
+      --paper: #faf7f2;
+      --ornament: #7a5a41;
+      --accent: #b08b5b;
+    }
+    html, body {
       margin: 0;
       padding: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Garamond", "Georgia", serif;
+      line-height: 1.6;
     }
-    .container {
+    .frame {
       max-width: 1000px;
-      margin: 2rem auto;
+      margin: 2.5rem auto;
       padding: 2rem;
-      border: 8px double #7a5a41;
       background: #fffdf8;
+      box-shadow: 0 1px 0 var(--ornament), 0 0 0 6px #fffdf8, 0 0 0 8px var(--ornament);
     }
     header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
     .masthead {
       font-size: 2rem;
       font-variant: small-caps;
       font-weight: bold;
-      color: #4b3a2a;
+      color: var(--sepia);
+      letter-spacing: 0.05em;
     }
     .subtitle {
       font-style: italic;
-      color: #7a5a41;
+      color: var(--ornament);
+      margin-top: 0.5rem;
+    }
+    .divider {
+      margin: 0.75rem auto 1.5rem;
+      width: 180px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent), transparent);
+    }
+    article h1 {
+      font-size: 1.75rem;
+      color: var(--sepia);
+      margin-bottom: 0.5rem;
+    }
+    .byline {
+      font-style: italic;
+      color: #3a3a3a;
+      margin-bottom: 1rem;
     }
     .ornate-rule {
-      margin: 1rem 0;
+      margin: 1.25rem 0;
       border: 0;
       height: 10px;
-      background: radial-gradient(circle, #b08b5b 1px, transparent 2px) center/8px 8px repeat-x;
+      background: radial-gradient(circle, var(--accent) 1px, transparent 2px) center/8px 8px repeat-x;
+    }
+    figure {
+      margin: 1.25rem 0 1.5rem;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      border: 1px solid var(--ornament);
+      box-shadow: 0 2px 0 var(--ornament), 0 0 0 8px #fffdf8, 0 0 0 9px var(--ornament);
+    }
+    figcaption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #4a4a4a;
     }
     .columns {
       column-count: 2;
@@ -46,51 +86,77 @@
     .columns p {
       margin-bottom: 1rem;
       text-align: justify;
+      break-inside: avoid;
     }
     .columns .lede::first-letter {
       float: left;
-      font-size: 3rem;
-      line-height: 0.9;
+      font-size: 3.5rem;
+      line-height: 0.95;
+      padding: 0.15rem 0.35rem 0.2rem 0;
       margin-right: 0.25rem;
-      color: #b08b5b;
-      font-weight: bold;
+      color: var(--accent);
+      font-weight: 700;
+      text-shadow: 0 1px 0 #fff;
     }
-    figure {
-      margin: 1rem auto;
+    footer {
+      margin-top: 2rem;
       text-align: center;
+      color: #666;
+      font-size: 0.95rem;
     }
-    figure img {
-      max-width: 100%;
-      border: 1px solid #7a5a41;
-      box-shadow: 0 0 0 6px #fffdf8, 0 0 0 8px #7a5a41;
+    .footer-rule {
+      margin: 1rem auto 0.5rem;
+      width: 200px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--ornament), transparent);
     }
-    figcaption {
-      font-style: italic;
-      margin-top: 0.5rem;
+    @media (max-width: 640px) {
+      .columns { column-count: 1; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <main class="frame">
     <header>
       <div class="masthead">The Electric Gazette</div>
-      <div class="subtitle">Cambridge Christmas Scandal</div>
+      <div class="subtitle">Aetherworks Edition — Academic Dispatch</div>
+      <div class="divider" aria-hidden="true"></div>
     </header>
 
-    <hr class="ornate-rule" />
+    <article>
+      <h1>Cambridge Christmas Scandal</h1>
+      <p class="byline">Students Caught Consulting the Aetherworks During Tripos</p>
 
-    <figure>
-      <img src="illustration_cambridge.jpg" alt="Victorian engraving of students in examination hall" />
-      <figcaption>Students in disarray as the Proctor uncovers the hidden Aethernet contrivance.</figcaption>
-    </figure>
+      <hr class="ornate-rule" />
 
-    <div class="columns">
-      <p class="lede">A grave irregularity has disturbed the frosted calm of the University this Michaelmas...</p>
-      <p>The paper in question—an examination in Ancient Physics, Philology and Miscellaneous Torments—contained...</p>
-      <p>It has now emerged that an ingenious student in possession of a contraband domestic cathode window...</p>
-      <p>The device was discovered when a vigilant Proctor, suspecting mischief, demanded that the desk be removed...</p>
-      <p>The culprits have been sent down for the remainder of the term and required to copy out, one hundred times...</p>
-    </div>
-  </div>
+      <figure>
+        <img src="images/cambridge_scandal.png" alt="" />
+        <figcaption></figcaption>
+      </figure>
+
+      <div class="columns">
+        <p class="lede">Cambridge, from our Academic Correspondent</p>
+
+        <p>A grave irregularity has disturbed the frosted calm of the University this Michaelmas, where certain undergraduates of a prominent College are alleged to have obtained unlawful assistance in the recent Christmas Tripos by recourse to the Aethernet.</p>
+
+        <p>The paper in question—an examination in Ancient Physics, Philology and Miscellaneous Torments—contained, among other matters, a problem touching the smallest units of speech and a curious enquiry into a room of seven letters wherein “weary heads repair.”</p>
+
+        <p>Several candidates, hitherto celebrated chiefly for their inability to repair anywhere on time, submitted answers of such crystalline correctness that the Examiners were compelled to make enquiries.</p>
+
+        <p>It has now emerged that an ingenious student in possession of a contraband domestic cathode window had contrived to conceal the thin cathode ray tube within the lid of his writing desk.</p>
+
+        <p>At a signal (the dropping of an inkstand), an accomplice in lodgings across the street consulted an Aetherworks “scholars’ compendium” and tapped the necessary hints back through the aether, where they appeared upon the underside of the candidate’s blotter in faint electric script.</p>
+
+        <p>The device was discovered when a vigilant Proctor, suspecting mischief, demanded that the desk be removed, whereupon the wiring parted and the poor machine printed the answer in letters six inches high.</p>
+
+        <p>The culprits have been sent down for the remainder of the term and required to copy out, one hundred times, the University’s newly appended statute: “That no Candidate shall, during Examination, communicate with the Aether, the Aetherworks, or any other Invisible Agency whatsoever, save his own Conscience.”</p>
+      </div>
+    </article>
+
+    <footer>
+      <div class="footer-rule" aria-hidden="true"></div>
+      <p>© 1885 The Electric Gazette • Academic Dispatches • Scholarly Misconduct • Invisible Agencies</p>
+    </footer>
+  </main>
 </body>
 </html>
