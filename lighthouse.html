@@ -4,70 +4,37 @@
   <meta charset="UTF-8" />
   <title>The Whispering Lighthouse of Orkney — The Electric Gazette</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { background:#fdfaf5; font-family:"Garamond","Georgia",serif; color:#2c1f14; line-height:1.6; margin:0; }
-    .container { max-width:1000px; margin:2rem auto; padding:2rem; border:8px double #7a5a41; background:#fffdf8; }
-    header { text-align:center; margin-bottom:1.5rem; }
-    .masthead { font-size:2rem; font-variant:small-caps; font-weight:700; color:#4b3a2a; letter-spacing:0.04em; }
-    .subtitle { font-style:italic; color:#7a5a41; }
-    .ornate-rule { margin:1rem 0; border:0; height:10px; background:radial-gradient(circle,#b08b5b 1px,transparent 2px) center/8px 8px repeat-x; }
-    figure { margin:1rem auto; text-align:center; }
-    figure img { max-width:100%; border:1px solid #7a5a41; box-shadow:0 0 0 6px #fffdf8, 0 0 0 8px #7a5a41; }
-    figcaption { font-style:italic; margin-top:0.5rem; color:#3a2a20; }
-    .columns { column-count:2; column-gap:2rem; }
-    .columns p { margin-bottom:1rem; text-align:justify; }
-    .columns .lede::first-letter { float:left; font-size:3rem; line-height:0.9; margin-right:0.3rem; color:#b08b5b; font-weight:700; }
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #666;
-      font-size: 0.95rem;
-    }
-    .footer-rule {
-      margin: 1rem auto 0.5rem;
-      width: 200px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--ornament), transparent);
-    }
-    @media (max-width: 640px) {
-      .masthead { font-size: 1.7rem; }
-      article h1 { font-size: 1.5rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
+  <main class="frame">
     <header>
       <div class="masthead">The Electric Gazette</div>
-      <div class="subtitle">The Whispering Lighthouse of Orkney</div>
+      <div class="subtitle">Aetherworks Edition — Maritime Dispatch</div>
+      <div class="divider"></div>
     </header>
 
-    <hr class="ornate-rule" />
+    <article>
+      <h1>The Whispering Lighthouse of Orkney</h1>
+      <p class="byline">Dispatch from Grim Ness</p>
 
-    <figure>
-      <img src="lighthouse.png" alt="Engraving of Grim Ness Lighthouse with electro-phonic apparatus" />
-      <figcaption>The Electro-Phonic Signalling Apparatus produces sounds most melancholy and, at times, curiously classical.</figcaption>
-    </figure>
+      <hr class="ornate-rule" />
 
-    <div class="columns">
-      <p><strong>Coastguard Hears the Fog Speak in Greek</strong></p>
-      <p><em>Kirkwall, Orkney</em></p>
+      <figure>
+        <img src="images/lighthouse.png" alt="Illustration of electro-phonic foghorn lighthouse" />
+        <figcaption>The Whispering Lighthouse, fitted with an electro-phonic foghorn apparatus.</figcaption>
+      </figure>
 
-      <p class="lede">At the remote lighthouse of Grim Ness there stands a new lantern recently fitted with what the Board of Trade describes as an Electro-Phonic Signalling Apparatus. By the mingling of electricity with compressed air, this device produces a sound which, to a sober mariner, resembles a melancholy cow.</p>
+      <div class="columns">
+        <p class="lede">At Grim Ness, a lighthouse has been fitted with an electro-phonic foghorn apparatus...</p>
+        <!-- Continue full article text here -->
+      </div>
+    </article>
 
-      <p>Last Thursday night, however, the keeper, Mr. Angus Macrimmon, swore before witnesses that the fog-horn distinctly uttered the words “Phi – Psi – Omega”. Being unversed in foreign alphabets, he telegraphed the anomaly to Edinburgh, where a Professor of Greek declared the sounds to be “a creditable rendering of the last letters of that venerable tongue.”</p>
-
-      <p>Whether this constitutes a warning from the depths, from the heavens, or from some prematurely fatigued pressure-valve remains under investigation. The Board of Trade has ordered that, until further notice, all notes in the range of classical declension be avoided.</p>
-    </div>
-
-   <footer>
-      <div class="footer-rule" aria-hidden="true"></div>
-      <p>© 1887 The Electric Gazette • Demonstrations • Assays • Household Curiosities</p>
+    <footer>
+      <div class="footer-rule"></div>
+      <p>© 1885 The Electric Gazette • Maritime Dispatches • Lighthouses • Electro-Phonic Curiosities</p>
     </footer>
-    </div>
+  </main>
 </body>
 </html>
-
-
-
-
