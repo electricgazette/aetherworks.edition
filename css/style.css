@@ -150,6 +150,37 @@ footer {
   height: 1px;
   background: linear-gradient(to right, transparent, var(--ornament), transparent);
 }
+  
+.victorian-nav {
+  margin: 30px auto;
+  text-align: center;
+  font-family: 'Times New Roman', Georgia, serif;
+}
+
+.victorian-nav hr {
+  border: 0;
+  border-top: 2px solid #000;
+  margin: 15px 0;
+}
+
+.victorian-nav .heading {
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.victorian-nav a.back-link {
+  color: #2c2c2c;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  background: #fdfdfd;
+  display: inline-block;
+  font-style: italic;
+  font-size: 1.1em;
+}
 
 <!-- Navigation back to main page -->
 <nav style="margin-top:20px; text-align:center;">
