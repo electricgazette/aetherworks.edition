@@ -151,6 +151,14 @@ footer {
   background: linear-gradient(to right, transparent, var(--ornament), transparent);
 }
 
+<!-- Navigation back to main page -->
+<nav style="margin-top:20px; text-align:center;">
+  <a href="https://electricgazette.github.io/aetherworks.edition/#"
+     style="font-family:Georgia, serif; font-size:1.2em; text-decoration:none; color:#2c2c2c; border:1px solid #999; padding:6px 12px; border-radius:4px; background:#f9f9f9;">
+    ⬅ Back to the Main Page
+  </a>
+</nav>
+
 /* Responsiveness */
 @media (max-width: 640px) {
   .columns { column-count: 1; }
